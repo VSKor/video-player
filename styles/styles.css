@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* line 37, styles.scss */
+.vp {
+  display: inline-block;
+  width: auto;
+}
+/* line 41, styles.scss */
+.vp .controls {
+  background-color: #cacaca;
+  box-shadow: 0 -28px 59px -39px #000000 inset;
+}
+/* line 45, styles.scss */
+.vp .controls .left {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+}
+/* line 51, styles.scss */
+.vp .controls .right {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: right;
+}
+/* line 58, styles.scss */
+.vp .controls .play {
+  color: transparent;
+  display: inline-block;
+  font: 0px/25px FontAwesome;
+  height: 25px;
+  overflow: hidden;
+  text-align: center;
+  text-rendering: auto;
+  width: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+/* line 16, styles.scss */
+.vp .controls .play::before {
+  font-size: 25px;
+  color: #e6e6e6;
+}
+/* line 60, styles.scss */
+.vp .controls .play::before {
+  content: "";
+}
+/* line 64, styles.scss */
+.vp .controls .pause {
+  color: transparent;
+  display: inline-block;
+  font: 0px/25px FontAwesome;
+  height: 25px;
+  overflow: hidden;
+  text-align: center;
+  text-rendering: auto;
+  width: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+/* line 16, styles.scss */
+.vp .controls .pause::before {
+  font-size: 25px;
+  color: #e6e6e6;
+}
+/* line 66, styles.scss */
+.vp .controls .pause::before {
+  content: "";
+}
+/* line 70, styles.scss */
+.vp .controls .replay {
+  color: transparent;
+  display: inline-block;
+  font: 0px/25px FontAwesome;
+  height: 25px;
+  overflow: hidden;
+  text-align: center;
+  text-rendering: auto;
+  width: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+/* line 16, styles.scss */
+.vp .controls .replay::before {
+  font-size: 25px;
+  color: #e6e6e6;
+}
+/* line 72, styles.scss */
+.vp .controls .replay::before {
+  content: "";
+}
+/* line 76, styles.scss */
+.vp .controls .full-screen {
+  color: transparent;
+  display: inline-block;
+  font: 0px/25px FontAwesome;
+  height: 25px;
+  overflow: hidden;
+  text-align: center;
+  text-rendering: auto;
+  width: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+/* line 16, styles.scss */
+.vp .controls .full-screen::before {
+  font-size: 25px;
+  color: #e6e6e6;
+}
+/* line 78, styles.scss */
+.vp .controls .full-screen::before {
+  content: "";
+}
+/* line 82, styles.scss */
+.vp .controls .mute {
+  color: transparent;
+  display: inline-block;
+  font: 0px/25px FontAwesome;
+  height: 25px;
+  overflow: hidden;
+  text-align: center;
+  text-rendering: auto;
+  width: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+/* line 16, styles.scss */
+.vp .controls .mute::before {
+  font-size: 25px;
+  color: #e6e6e6;
+}
+/* line 84, styles.scss */
+.vp .controls .mute::before {
+  content: "";
+}
+/* line 88, styles.scss */
+.vp .controls .status {
+  background-color: #dcdcdc;
+  box-shadow: 0 0 3px -1px inset;
+  height: 10px;
+  position: relative;
+}
+/* line 94, styles.scss */
+.vp .controls .status .progress {
+  background-color: #cbcbcb;
+  box-shadow: 1px 0 3px -1px #000 inset;
+  height: 100%;
+  transition: width 0.1s ease 0s;
+  width: 0;
+  -webkit-transition: width 0.1s;
+  -moz-transition: width 0.1s;
+  -ms-transition: width 0.1s;
+  -o-transition: width 0.1s;
+  transition: width 0.1s;
+}
+/* line 108, styles.scss */
+.vp .controls .status .previev {
+  display: none;
+  height: 125px;
+  position: absolute;
+  bottom: 100%;
+  width: auto;
+  border: 1px solid #747474;
+  border-bottom: 0;
+}
+/* line 119, styles.scss */
+.vp .controls .status:hover .previev {
+  display: block;
+}
+/* line 125, styles.scss */
+.vp .controls .volume {
+  background-color: #dcdcdc;
+  box-shadow: 0 0 3px -1px inset;
+  height: 10px;
+  width: 75px;
+  display: inline-block;
+  margin: 15px 5px 0px 5px;
+  vertical-align: top;
+}
+/* line 134, styles.scss */
+.vp .controls .volume .currentVolume {
+  background-color: #cbcbcb;
+  box-shadow: 1px 0 3px -1px #000 inset;
+  height: 100%;
+  -webkit-transition: width 0.1s;
+  -moz-transition: width 0.1s;
+  -ms-transition: width 0.1s;
+  -o-transition: width 0.1s;
+  transition: width 0.1s;
+}
+/* line 148, styles.scss */
+.vp .video-block {
+  position: relative;
+}
+/* line 150, styles.scss */
+.vp .video-block .curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 3;
+}
+/* line 23, styles.scss */
+.vp .video-block .play-curtain::before {
+  cursor: pointer;
+  font: 0px/25px FontAwesome;
+  color: #ebebeb;
+  height: 100px;
+  left: 50%;
+  margin: -20px 0 0 -25px;
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  font-size: 100px;
+}
+/* line 161, styles.scss */
+.vp .video-block .play-curtain::before {
+  content: "";
+}
+/* line 23, styles.scss */
+.vp .video-block .replay-curtain::before {
+  cursor: pointer;
+  font: 0px/25px FontAwesome;
+  color: #ebebeb;
+  height: 100px;
+  left: 50%;
+  margin: -20px 0 0 -25px;
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  font-size: 100px;
+}
+/* line 167, styles.scss */
+.vp .video-block .replay-curtain::before {
+  content: "";
+}
+/* line 173, styles.scss */
+.vp video {
+  vertical-align: top;
+}
+/* line 179, styles.scss */
+.vp.full-screen .full-screen::before {
+  content: "";
+}
+/* line 183, styles.scss */
+.vp.full-screen .video-block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 190, styles.scss */
+.vp.full-screen .video-block video {
+  width: 100%;
+  height: 100%;
+}
+/* line 195, styles.scss */
+.vp.full-screen .controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 203, styles.scss */
+.vp.paused .play-curtain {
+  display: block;
+}
+/* line 206, styles.scss */
+.vp.paused .pause {
+  display: none;
+}
+/* line 209, styles.scss */
+.vp.paused .play {
+  display: inline-block;
+}
+/* line 214, styles.scss */
+.vp.playing .pause-curtain {
+  display: block;
+}
+/* line 217, styles.scss */
+.vp.playing .pause {
+  display: inline-block;
+}
+/* line 220, styles.scss */
+.vp.playing .play {
+  display: none;
+}
+/* line 225, styles.scss */
+.vp.ended .play-curtain {
+  display: none;
+}
+/* line 228, styles.scss */
+.vp.ended .replay-curtain {
+  display: block;
+}
+/* line 233, styles.scss */
+.vp.muted .mute {
+  border-radius: 13px;
+  box-shadow: 0 0 5px -2px #000 inset;
+}
+/* line 236, styles.scss */
+.vp.muted .mute::before {
+  font-size: 20px;
+}
